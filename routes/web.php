@@ -17,6 +17,6 @@ Route::get('/', function () {
     return redirect()->route('comics.index');
 });
 
-// Route::get('test', 'TestController@index')->name('test');
+Route::get('comics/confirm-delete/{comic}', 'ComicController@confirmDelete')->name('comics.confirm-delete');
 
 Route::resource('comics', 'ComicController');
