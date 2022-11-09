@@ -22,7 +22,27 @@
 
          <div>
             <label for="thumb">Thumb</label>
-            <input type="text" name="thumb">
+            <input type="url" name="thumb">
+         </div>
+
+         <div>
+            <label for="price">Price</label>
+            <input type="number" step=".01" name="price">
+         </div>
+
+         <div>
+            <label for="series">Series</label>
+            <input type="text" name="series">
+         </div>
+
+         <div>
+            <label for="sale_date">Sale Date</label>
+            <input type="date" name="sale_date">
+         </div>
+
+         <div>
+            <label for="type">Type</label>
+            <input type="text" name="type">
          </div>
 
          <div>
