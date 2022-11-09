@@ -7,6 +7,10 @@
     <title>Lista-Comics</title>
 </head>
 <body>
-    @dump($comics)
+
+    @foreach ($comics as $comic )
+    <a href="{{route('comics.show' , $comic->id) }}"> {{ $comics->title }} </a>
+
+    @endforeach
 </body>
 </html>
