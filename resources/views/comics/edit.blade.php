@@ -12,7 +12,7 @@
         @method('PUT')
         <div>
            <label for="title">Title</label>
-           <input type="text" name="title" value="{{ $comic->title}}" >
+           <input type="text" name="title" min="3" max="75" value="{{ $comic->title}}" >
         </div>
 
         <div>
