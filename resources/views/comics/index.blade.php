@@ -15,11 +15,15 @@
             {{-- <a href="{{route('comics.confirm-delete' , $comic->id) }}">Elimina</a> --}}
 
 
+
             <form method="POST" action="{{ route('comics.destroy', $comic->id)}}">
                 @csrf
                 @method('DELETE')
                 <input onclick="return confirm('Sei sicuro?')" type="submit" value="elimina">
             </form>
+        </div>
+        <div>
+            <a href="{{route('comics.create' , $comic->id) }}"> CREA </a>
         </div>
     @endforeach
 </body>
