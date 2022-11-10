@@ -15,5 +15,9 @@
     <p>{{ $comic->description }}</p>
     <p>{{ $comic->series }}</p>
     <p>{{ $comic->sale_date }}</p>
+
+    <div>
+        <a href="{{route('comics.edit', $comic->id)}}">EDIT</a>
+    </div>
 </body>
 </html>
