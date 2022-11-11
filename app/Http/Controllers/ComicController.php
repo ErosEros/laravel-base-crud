@@ -51,7 +51,10 @@ class ComicController extends Controller
             'sale_date' => 'required' ,
             'type'=> 'string',
 
-        ]);
+        ],
+
+        // ['title.required' => 'MINIMO METTERE 3 CARATTERI ALTRIMENTI NON CI STA BENE']
+        );
 
         //
         $data = $request->all();
@@ -61,6 +64,8 @@ class ComicController extends Controller
         return redirect()->route('comics.show', $newComic->id);
 
     }
+
+
 
     /**
      * Display the specified resource.
